@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stylish Login</title>
+  <title>Signup</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -25,19 +25,42 @@
         <span class="text-white font-bold text-2xl">S</span>
       </div>
     </div>
-    <h2 class="text-2xl font-extrabold text-gray-800 text-center mb-6">Welcome Back</h2>
+    <h2 class="text-2xl font-extrabold text-gray-800 text-center mb-6">Create Your Account</h2>
 
     <form class="space-y-5">
+      <!-- Name Field -->
+      <div>
+        <label for="name" class="sr-only">Full Name</label>
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+            <!-- Person Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 14c4.418 0 8 3.582 8 8H4c0-4.418 3.582-8 8-8z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 2a4 4 0 014 4v3H8V6a4 4 0 014-4z" />
+            </svg>
+          </span>
+          <input
+            id="name"
+            type="text"
+            placeholder="Full Name"
+            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--accent)] transition"
+          />
+        </div>
+      </div>
+
       <!-- Email Field -->
       <div>
         <label for="email" class="sr-only">Email</label>
         <div class="relative">
           <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
-            <!-- Mail Icon -->
+            <!-- Email Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
                  viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M16 12l-4-4m0 0l-4 4m4-4v12" />
+                    d="M12 2a9 9 0 11-9 9 9 9 0 019-9z" />
             </svg>
           </span>
           <input
@@ -72,20 +95,44 @@
         </div>
       </div>
 
-      <!-- Login Button -->
+      <!-- Confirm Password Field -->
+      <div>
+        <label for="confirmPassword" class="sr-only">Confirm Password</label>
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+            <!-- Lock Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 11c-1.657 0-3 1.343-3 3v2h6v-2c0-1.657-1.343-3-3-3z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 11V7a5 5 0 00-10 0v4" />
+            </svg>
+          </span>
+          <input
+            id="confirmPassword"
+            type="password"
+            placeholder="Confirm Password"
+            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--accent)] transition"
+          />
+        </div>
+      </div>
+
+      <!-- Signup Button -->
       <button
         type="submit"
         class="w-full py-2 rounded-xl font-semibold bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] 
                text-gray-800 hover:opacity-90 transform hover:-translate-y-0.5 transition"
       >
-        Log In
+        Sign Up
       </button>
     </form>
 
     <p class="text-center text-sm text-gray-600 mt-6">
-      Don’t have an account?
-      <a href="Signup.html" class="text-[var(--accent)] font-medium hover:underline">Sign up</a>
+      Already have an account?
+      <a href="login.html" class="text-[var(--accent)] font-medium hover:underline">Log in</a>
     </p>
   </div>
+
 </body>
 </html>
