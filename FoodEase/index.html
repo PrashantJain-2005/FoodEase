@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodEase</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="home">
+      <nav>
+        <div class="lnav">
+          <div class="img">
+            <img
+              src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?semt=ais_hybrid&w=740"
+              alt=""
+            />
+          </div>
+          <div class="search-box">
+            <input
+              type="text"
+              id="search"
+              class="search-input"
+              placeholder="Search recipe..."
+            />
+            <label for="search"
+              ><i class="ri-search-line search-btn"></i
+            ></label>
+          </div>
+        </div>
+        <div class="rnav">
+          <a href="#home">home</a>
+          <a href="#features">Features</a>
+          <a href="#steps">Steps</a>
+          <a href="#contact">contact us</a>
+          <i class="ri-notification-4-line"></i>
+          <a href="login.html">
+            <i class="ri-user-line profile"></i>
+          </a>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-left">
+          <div class="left-container">
+            <h1>
+              no recipe? <br />no problem. let's <br />cook, connect, share.
+            </h1>
+            <p>
+              got random ingredients? <span>FoodEase</span> turns your fridge
+              into flavor. join a community where food lovers
+              <span>share, cook, </span> and <span>create magic.</span>
+            </p>
+            <div class="btns">
+              <button class="cta">explore recipes</button>
+              <button class="secondary-cta">join the foodEase</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="right-container"></div>
+        </div>
+      </section>
+    </header>
+
+    <section class="discover">
+      <div class="discover-imgs"></div>
+      <div class="discover-text">
+        <div class="discover-text-container">
+          <h1>Discover endless foodspiration</h1>
+          <p>
+            Tired of the same meal? Discover fresh ideas, smart hacks - all in
+            one place.
+          </p>
+          <button>Explore</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="key-features" id="features">
+      <div class="key-features-wrapper">
+        <h1 class="features-heading">Key Features</h1>
+
+        <div class="feature-wrapper">
+          <div class="feature">
+            <div class="feature-icon">
+              <img src="assets/icons/recipe-feature.svg" alt="Get Recipe" />
+            </div>
+            <p class="feature-title">Get Recipe</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <img src="assets/icons/budget-feature.svg" alt="Budget Tracker" />
+            </div>
+            <p class="feature-title">Budget Tracker</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <img src="assets/icons/community-feature.svg" alt="Community" />
+            </div>
+            <p class="feature-title">Community</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <img src="assets/icons/inventory-feature.svg" alt="Inventory" />
+            </div>
+            <p class="feature-title">Inventory</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="steps">
+      <div class="hiw-container">
+        <h2 class="hiw-heading">How It Works</h2>
+        <div class="hiw-steps">
+          <div class="hiw-step">
+            <div class="step-icon">👤</div>
+            <h3>Create Account</h3>
+            <p>Sign up and set your dietary preferences and allergies.</p>
+          </div>
+          <div class="hiw-step">
+            <div class="step-icon">📝</div>
+            <h3>Add Ingredients</h3>
+            <p>
+              Manage your food inventory with ease, track expiry, and
+              availability.
+            </p>
+          </div>
+          <div class="hiw-step">
+            <div class="step-icon">🍽️</div>
+            <h3>Get Recipes</h3>
+            <p>
+              Get recipe suggestions based on what you already have at home!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2 class="contact-heading">Contact Us</h2>
+        <p class="contact-subheading">
+          Have a question, suggestion, or just want to say hi? We'd love to hear
+          from you!
+        </p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p><strong>Email:</strong> support@foodease.com</p>
+            <p><strong>Location:</strong> Globally Remote</p>
+            <p><strong>Follow us:</strong></p>
+            <div class="social-links">
+              <a href="#" target="_blank"><i class="ri-instagram-line"></i></a>
+              <a href="#" target="_blank"><i class="ri-twitter-line"></i></a>
+              <a href="#" target="_blank"
+                ><i class="ri-linkedin-box-line"></i
+              ></a>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2 class="footer-logo">FoodEase</h2>
+          <p>
+            Making food planning and management easier for everyone, every day.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#steps">Steps</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-line"></i></a>
+            <a href="#"><i class="ri-linkedin-box-line"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 FoodEase. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>
